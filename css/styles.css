@@ -19,6 +19,16 @@
 }
 
 @font-face {
+    font-family: "Gilro";
+    src: url("../fonts/Gilroy-MediumItalic.eot");
+    src: url("../fonts/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gilroy-MediumItalic.woff") format("woff"),
+    url("../fonts/Gilroy-MediumItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
     font-family: "Gilroy";
     src: url("../fonts/Gilroy-Light.eot");
     src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
@@ -135,4 +145,78 @@ body {
 
 .header__burger:after {
     bottom: -7px;
+}
+
+
+/* Intro */
+.intro {
+    background: #94C31F;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.intro .container > img {
+    height: 100%;
+}
+
+.intro__bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.intro__title {
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 103px;
+    margin-bottom: 10px;
+    font-size: 60px;
+    max-width: 550px;
+}
+
+.intro__desc {
+    text-transform: lowercase;
+    color: #fff;
+    margin-bottom: 96px;
+    font-size: 25px;
+    max-width: 550px;
+}
+
+.intro__advantage {
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 76px;
+}
+
+.intro__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.intro__btn {
+    background: #F8F8F8;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    border: none;
+    padding: 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 290px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+/* Adaptive */
+@media (min-width: 1685px) {
+    .intro__img {
+        right: 0;
+        left: initial;
+    }
 }
