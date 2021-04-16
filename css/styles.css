@@ -923,7 +923,7 @@ body {
     .advantage__tab {
         padding: 60px 20px;
     }
-    .description__details > img {
+    .description__details > div > img {
         width: 100%;
     }
     .description__one, .description__desc .silver, .description__thee, .description__four, .description__five, .description__tab-title {
