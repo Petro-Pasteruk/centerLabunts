@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Центр докртора Лабунца</title>
+    <link rel="stylesheet" href="css/license.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <header class="header">
+        <div class="container">
+            <ul class="social-links">
+                <li>
+                    <a href="" class="social-links__link">
+                        <img src="img/instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social-links__link">
+                        <img src="img/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="social-links__link">
+                        <img src="img/facebook.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="header__burger-wrap">
+                <div class="header__burger"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Сотрудники</a></li>
+                <li class="nav__item"><a href="" class="nav__link">О центре</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Галерея</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Об авторе</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Методика</a></li>
+                <li class="nav__item active"><a href="" class="nav__link">Сертификаты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <article class="license">
+            <div class="container">
+                <div class="title">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</div>
+                <ul class="license__list">
+                    <li><img src="img/license1.png" alt=""></li>
+                    <li><img src="img/license2.png" alt=""></li>
+                </ul>
+            </div>
+            <img src="img/sertificate_bg.png" alt="" class="license__bg">
+        </article>
+    </main>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="contact">
+            <div class="title">Контакты</div>
+            <div class="contact__desc">Центр Доктора Лабунца - все права защищены 2021</div>
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <div class="contacts__title">Адрес</div>
+                    <div class="contacts__content">г. Нур-Султан, проспект Дружбы 21</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">Телефон</div>
+                    <div class="contacts__content">+7 (777) 777 77 77</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">E-mail:</div>
+                    <div class="contacts__content">info@labunec.kz</div>
+                </li>
+                <li class="contacts__item">
+                    <div class="contacts__title">Социальные сети</div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="" class="social-links__link">
+                                <img src="img/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-links__link">
+                                <img src="img/twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="social-links__link">
+                                <img src="img/facebook.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="img/maps.png" alt="">
+        </div>
+    </div>
+</footer>
+<script>
+    const allNavItem = document.querySelectorAll(".nav__item");
+    for (let i = 0; i < allNavItem.length; i++) {
+        allNavItem[i].addEventListener("mouseover", function () {
+            if (i > 0) {
+                allNavItem[i-1].classList.add("removeAfter");
+            }
+        });
+        allNavItem[i].addEventListener("mouseout", function () {
+            if (i > 0) {
+                allNavItem[i-1].classList.remove("removeAfter");
+            }
+        });
+    }
+</script>
+</body>
+</html>
